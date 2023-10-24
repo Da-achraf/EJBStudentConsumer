@@ -7,7 +7,7 @@ import java.util.Properties;
 
 public class StudentRemoteEJB {
     public static StudentRemote getStudentRemote() throws NamingException {
-        return (StudentRemote) getContext().lookup("ejb:/EjbStudent1-1.0-SNAPSHOT/StudentImplementation!ma.fstt.ejb.StudentRemote");
+        return (StudentRemote) getContext().lookup("ejb:/EjbStudent-1.0-SNAPSHOT/StudentImplementation!ma.fstt.ejb.StudentRemote");
     }
 
     private static Context getContext() throws NamingException {
